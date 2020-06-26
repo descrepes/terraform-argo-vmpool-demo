@@ -61,7 +61,8 @@ resource "pingdom_check" "pingdom-check-demo" {
 
 resource "k8s_manifest" "vmpool-demo" {
   content   = templatefile("/home/terraform/manifests/vmpool.yaml", {
-    customer = "demo"
+    customer = "demo",
+    provider = "azr"
   })
 
   namespace = "customers"
