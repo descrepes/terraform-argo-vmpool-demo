@@ -9,7 +9,7 @@ ${yamlencode({
     },
     "customer": "${customer}",
     "web": {
-      "replicas": 4
+      "replicas": 2
     },
     "database": {
       "replicas": 2
